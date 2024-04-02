@@ -135,9 +135,66 @@
         margin-bottom: 5px;
       }
 
-      @media (max-width: 768px) {
+      @media only screen and (max-width: 280px) {
+        /* For Galaxy Fold */
+        .container {
+          max-width: 250px;
+        }
+        .resume a {
+          display: inline-block;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .section a {
+          display: inline-block;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      @media only screen and (min-width: 281px) and (max-width: 768px) {
+        /* For phones */
         .container {
           padding: 0 10px;
+        }
+        .resume a {
+          display: inline-block;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .section a {
+          display: inline-block;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        /* For tablets */
+        .container {
+          max-width: 600px;
+        }
+      }
+
+      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        /* For computers and laptops */
+        .container {
+          max-width: 800px;
+        }
+      }
+
+      @media only screen and (min-width: 1441px) {
+        /* For TVs */
+        .container {
+          max-width: 1000px;
         }
       }
     </style>
